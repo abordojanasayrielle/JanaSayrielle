@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery | Jana Sayrielle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="logo.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4&display=swap" rel="stylesheet">
+<style>
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Serif 4", Georgia, serif;
+}
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.8;
+  padding-top: 100px;
+}
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  color: #000;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #f06a9b;
+}
+header {
+  width: 100%;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.logo h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.logo p {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+nav a {
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 500;
+}
+#all-about, #dolls-dreams, #pens-keyboards, #silent-viewer {
+  scroll-margin-top: 120px; 
+}
+.page-title {
+  background: #fff0f5;
+  padding: 50px 20px 20px 20px;
+  text-align: center;
+}
+.page-title h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.gallery-nav {
+  text-align: center;
+  margin: 20px 0 50px;
+  font-weight: 500;
+}
+.gallery-nav a {
+  margin: 0 15px;
+  font-size: 16px;
+  color: #551443;
+}
+.gallery-nav a:hover {
+  color: #f06a9b;
+  border-bottom: 2px solid #f06a9b;
+  padding-bottom: 2px;
+}
+.gallery-section {
+  padding: 50px 50px;
+}
+.gallery-section h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+.gallery-section p.desc {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 25px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.photo {
+  text-align: center;
+}
+.photo img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.photo img:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.photo p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+.back-top {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  background: #f06a9b;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: 2px solid #f06a9b;
+}
+.back-top:hover {
+  background: #fff;
+  color: #f06a9b;
+  border: 2px solid #f06a9b;
+}
+@media(max-width:1100px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media(max-width:600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+footer {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #777;
+}
+</style>
+</head>
+<body id="top">
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+    <div>
+      <h1>Jana Sayrielle</h1>
+      <p>CONTENT CREATOR</p>
+    </div>
+  </div>
+  <nav>
+    <a href="index.html">ABOUT ME</a>
+    <a href="index.html#blogs">BLOGS</a>
+    <a href="MEDIA/media.html">MEDIA</a>
+    <a href="DREAM/dreams.html">DREAMS</a>
+    <a href="gallery.html">GALLERY</a>
+  </nav>
+</header>
+<section class="page-title">
+  <h2>Photo Gallery ♡</h2>
+  <div class="gallery-nav">
+    <a href="#all-about">All About Jana</a> |
+    <a href="#dolls-dreams">Biography</a> |
+    <a href="#pens-keyboards">BLOG 1</a> |
+    <a href="#silent-viewer">BLOG 2</a> |
+    <a href="#future">BLOG 3</a> 
+  </div>
+</section>
+<section class="gallery-section" id="all-about">
+<h3>All About Jana</h3>
+<p class="desc">Personal moments and everyday snapshots.</p>
+<div class="gallery-grid">
+  <div class="photo">
+    <a href="IMAGES/HOMEPAGE/author-pic.jpg" target="gallerytab">
+      <img src="IMAGES/HOMEPAGE/author-pic.jpg" alt="Jana's Close-up Shot" title="Portrait of Jana">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/HOMEPAGE/pic2.png" target="gallerytab">
+      <img src="IMAGES/HOMEPAGE/pic2.png" alt="Jana Holding a Toy" title="Jana Holding a Toy">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/HOMEPAGE/jana3.jpg" target="gallerytab">
+      <img src="IMAGES/HOMEPAGE/jana3.jpg" alt="Jana Sitting down" title="Jana Sitting Down">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/HOMEPAGE/jana4.jpg" target="gallerytab">
+      <img src="IMAGES/HOMEPAGE/jana4.jpg" alt="Jana doing the peace sign" title="Jana Posing">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/HOMEPAGE/jana5.jpg" target="gallerytab">
+      <img src="IMAGES/HOMEPAGE/jana5.jpg" alt="Jana's Selfie" title="Jana's Selfie">
+    </a>
+  </div>
+</div>
+<a href="#top" class="back-top" target="_self">Back to Top</a>
+</section>
+<section class="gallery-section" id="dolls-dreams">
+<h3>From Dolls to Dreams</h3>
+<p class="desc">The Story of Jana Sayrielle G. Abordo</p>
+<div class="gallery-grid">
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BIOGRAPHY/childhood1.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BIOGRAPHY/childhood1.jpg" alt="Blog photo 1" title="Jana during her childhood years">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BIOGRAPHY/childhood2.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BIOGRAPHY/childhood2.jpg" alt="Blog photo 2" title="Jana during her childhood years">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BIOGRAPHY/teenage1.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BIOGRAPHY/teenage1.jpg" alt="Dream-inspired photo 3" title="Jana during her teenage years">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BIOGRAPHY/college1.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BIOGRAPHY/college1.jpg" alt="Dream-inspired photo 4" title="Jana during her college years">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BIOGRAPHY/college2.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BIOGRAPHY/college2.jpg" alt="Dream-inspired photo 5" title="Jana during her college years">
+    </a>
+  </div>
+</div>
+<a href="#top" class="back-top" target="_self">Back to Top</a>
+</section>
+<section class="gallery-section" id="pens-keyboards">
+<h3>From Pens to Keyboards</h3>
+<p class="desc">How Technology Changed My Way of Learning</p>
+<div class="gallery-grid">
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG1/oc1.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG1/oc1.jpg" alt="Pens to keyboards 1" title="Online Class Set-Up">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG1/oc2.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG1/oc2.jpg" alt="Pens to keyboards 2" title="Google Classroom">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG1/laptopcode.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG1/laptopcode.jpg" alt="Pens to keyboards 3" title="Coding during Online Class">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG1/selfieoc.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG1/selfieoc.jpg" alt="Pens to keyboards 4" title="A Laptop Mirror Selfie of Jana">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG1/coding.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG1/coding.jpg" alt="Pens to keyboards 5" title="Coding during Online Class">
+    </a>
+  </div>
+</div>
+<a href="#top" class="back-top" target="_self">Back to Top</a>
+</section>
+<section class="gallery-section" id="silent-viewer">
+<h3>From Silent Viewer to the Girl on Your Screen</h3>
+<p class="desc">Building my online platform</p>
+<div class="gallery-grid">
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG2/yt.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG2/yt.jpg" alt="Coding setup 3" title="Jana's Old Youtube Account">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG2/idim.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG2/idim.jpg" alt="Coding setup 4" title="Jana's Third Event with IDIM Bakery">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG2/pr.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG2/pr.jpg" alt="Coding setup 5" title="Jana's Collaboration with Brands">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG2/sstiktok.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG2/sstiktok.jpg" alt="Coding setup 1" title="Jana's Tiktok Video with Comments">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG2/sstiktok2.jpg" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG2/sstiktok2.jpg" alt="Coding setup 2" title="Jana's Tiktok Video with Comments">
+    </a>
+  </div>
+</div>
+<a href="#top" class="back-top" target="_self">Back to Top</a>
+</section>
+<section class="gallery-section" id="future">
+<h3>The Future I'm Coding for Myself</h3>
+<p class="desc">One step at a time</p>
+<div class="gallery-grid">
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG3/python.png" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG3/python.png" alt="Python Logo" title="Python Logo">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG3/html.png" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG3/html.png" alt="HTML Logo" title="HTML Logo">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG3/java.png" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG3/java.png" alt="Java Logo" title="Java Logo">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG3/c.png" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG3/c.png" alt="C# Logo" title="C# Logo">
+    </a>
+  </div>
+  <div class="photo">
+    <a href="IMAGES/PHOTOGALLERY/BLOG3/sql.png" target="gallerytab">
+      <img src="IMAGES/PHOTOGALLERY/BLOG3/sql.png" alt="MySQL Logo" title="MySQL Logo">
+    </a>
+  </div>
+</div>
+<a href="#top" class="back-top" target="_self">Back to Top</a>
+</section>
+<footer>
+© 2025 Jana Sayrielle. All rights reserved.
+</footer>
+</body>
+</html>

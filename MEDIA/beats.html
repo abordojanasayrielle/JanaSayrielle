@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Beats | Jana Sayrielle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="logo.png" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4&display=swap" rel="stylesheet">
+
+<style>
+html{ scroll-behavior:smooth; }
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Source Serif 4", Georgia, serif;
+}
+
+body{
+  background:#fff;
+  color:#333;
+  line-height:1.8;
+  padding-top:100px;
+}
+
+h1,h2,h3{
+  font-family:"Playfair Display", Georgia, serif;
+  font-weight:400;
+  color:#000;
+}
+
+a{
+  text-decoration:none;
+  color:#000;
+}
+
+a:hover{
+   color:#f06a9b; 
+  }
+
+/* NAVBAR */
+header{
+  width:100%;
+  padding:25px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#fff;
+  border-bottom:1px solid #eee;
+  z-index:1000;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo img{
+  width:50px;
+  height:50px;
+}
+
+.logo h1{ font-size:20px; font-weight:600; }
+.logo p{ font-size:12px; letter-spacing:2px; }
+
+nav a{
+  margin-left:30px;
+  font-size:17px;
+  font-weight:500;
+}
+
+/* HERO */
+.beats-hero{
+  background:#fff0f5;
+  padding:60px 20px 30px;
+  text-align:center;
+}
+
+.beats-hero h1{ font-size:40px; }
+
+/* MINI NAV */
+.beats-nav{
+  text-align:center;
+  margin:20px 0 40px;
+  font-weight:500;
+}
+
+.beats-nav a{
+  margin:0 15px;
+  font-size:16px;
+  color:#551443;
+}
+
+.beats-nav a:hover{
+  color:#f06a9b;
+  border-bottom:2px solid #f06a9b;
+  padding-bottom:2px;
+}
+
+
+
+/* SCROLL OFFSET */
+#rnb, #opm, #pop{
+  scroll-margin-top:120px;
+}
+
+/* SECTION */
+.genre{
+  padding:60px 50px;
+}
+
+.genre h2{
+  text-align:center;
+  font-size:30px;
+  margin-bottom:10px;
+}
+
+.genre p.desc{
+  text-align:center;
+  font-size:15px;
+  color:#666;
+  margin-bottom:40px;
+}
+
+/* GRID */
+.song-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
+}
+
+.song{
+  text-align:center;
+}
+
+.song img{
+  width:100%;
+  height:270px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:10px;
+  display:block;
+}
+
+.song h3{
+  font-size:16px;
+}
+
+.song p{
+  font-size:14px;
+  color:#777;
+  margin-bottom:8px;
+}
+
+audio{
+  width:100%;
+}
+
+.back-top{
+  display:block;          
+  width:fit-content;   
+  margin:25px auto 0;  
+  font-size:14px;
+  background:#f06a9b;
+  color:#fff;
+  padding:8px 20px;
+  border-radius:25px;
+  border:2px solid #f06a9b;
+}
+
+
+.back-top:hover{
+  background:#fff;
+  color:#f06a9b;
+}
+
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .song-grid{ grid-template-columns:repeat(3,1fr); }
+}
+@media(max-width:600px){
+  .song-grid{ grid-template-columns:repeat(2,1fr); }
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  border-top:1px solid #eee;
+  font-size:14px;
+  color:#777;
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+  <div class="logo">
+    <img src="../logo.png" alt="Jana Sayrielle Logo" title="Jana Sayrielle Logo">
+    <div>
+      <h1>Jana Sayrielle</h1>
+      <p>CONTENT CREATOR</p>
+    </div>
+  </div>
+
+   <nav>
+    <a href="../index.html">ABOUT ME</a>
+    <a href="../index.html#blogs">BLOGS</a>
+    <a href="media.html">MEDIA</a>
+    <a href="../DREAM/dreams.html">DREAMS</a>
+    <a href="../gallery.html">GALLERY</a>
+  </nav>
+</header>
+
+<section class="beats-hero">
+  <h1>My Favorite Beats ♡</h1>
+
+  <div class="beats-nav">
+    <a href="#rnb">Alternative / Contemporary R&B</a> |
+    <a href="#opm">OPM Pop & Indie Ballads</a> |
+    <a href="#pop">Contemporary Pop Love Songs</a>
+  </div>
+  
+    <a href="media.html">Go Back</a>
+</section>
+
+<!-- RNB -->
+<section class="genre" id="rnb">
+<h2>Alternative / Contemporary R&B</h2>
+<p class="desc">Smooth and emotional R&B tracks.</p>
+
+<div class="song-grid">
+
+<!-- SZA Songs -->
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/gooddays.png" alt="Good Days by SZA Album Cover" title="Good Days - SZA">
+<h3>Good Days</h3>
+<p>SZA</p>
+<audio controls><source src="../AUDIO/gooddays.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/snooze.png" alt="Snooze by SZA Album Cover" title="Snooze - SZA">
+<h3>Snooze</h3>
+<p>SZA</p>
+<audio controls><source src="../AUDIO/snooze.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/bmf.jpg" alt="BMF by SZA Album Cover" title="BMF - SZA">
+<h3>BMF</h3>
+<p>SZA</p>
+<audio controls><source src="../AUDIO/bmf.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/luther.jpg" alt="Luther by Kendrick x SZA Album Cover" title="Luther - Kendrick x SZA">
+<h3>Luther</h3>
+<p>Kendrick x SZA</p>
+<audio controls><source src="../AUDIO/luther.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/normalgirl.jpg" alt="Normal Girl by SZA Album Cover" title="Normal Girl - SZA">
+<h3>Normal Girl</h3>
+<p>SZA</p>
+<audio controls><source src="../AUDIO/normalgirl.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/lowkey.jpg" alt="Lowkey by NIKI Album Cover" title="Lowkey - NIKI">
+<h3>Lowkey</h3>
+<p>NIKI</p>
+<audio controls><source src="../AUDIO/lowkey.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/japanesedenim.jpg" alt="Japanese Denim by Daniel Caesar Album Cover" title="Japanese Denim - Daniel Caesar">
+<h3>Japanese Denim</h3>
+<p>Daniel Caesar</p>
+<audio controls><source src="../AUDIO/japanesedenim.mp3" type="audio/mpeg"></audio>
+</div>
+
+</div>
+<a href="#top" class="back-top">Back to Top</a>
+</section>
+
+<!-- OPM -->
+<section class="genre" id="opm">
+<h2>OPM Pop & Indie Ballads</h2>
+<p class="desc">Filipino love anthems and indie ballads.</p>
+
+<div class="song-grid">
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/tadhana.jpg" alt="Tadhana by Up Dharma Down Album Cover" title="Tadhana - Up Dharma Down">
+<h3>Tadhana</h3>
+<p>Up Dharma Down</p>
+<audio controls><source src="../AUDIO/tadhana.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/tibok.jpg" alt="Tibok by Earl Agustin Album Cover" title="Tibok - Earl Agustin">
+<h3>Tibok</h3>
+<p>Earl Agustin</p>
+<audio controls><source src="../AUDIO/tibok.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/mahika.jpg" alt="Mahika by Adie Album Cover" title="Mahika - Adie">
+<h3>Mahika</h3>
+<p>Adie</p>
+<audio controls><source src="../AUDIO/mahika.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/patutunguhan.jpg" alt="Patutunguhan by Cup of Joe Album Cover" title="Patutunguhan - Cup of Joe">
+<h3>Patutunguhan</h3>
+<p>Cup of Joe</p>
+<audio controls><source src="../AUDIO/patutunguhan.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/aphrodite.jpg" alt="Aphrodite by The Ridleys Album Cover" title="Aphrodite - The Ridleys">
+<h3>Aphrodite</h3>
+<p>The Ridleys</p>
+<audio controls><source src="../AUDIO/aphrodite.mp3" type="audio/mpeg"></audio>
+</div>
+
+</div>
+<a href="#top" class="back-top">Back to Top</a>
+</section>
+
+<!-- POP -->
+<section class="genre" id="pop">
+<h2>Contemporary Pop Love Songs</h2>
+<p class="desc">Modern pop love tracks.</p>
+
+<div class="song-grid">
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/dress.jpg" alt="Dress by Taylor Swift Album Cover" title="Dress - Taylor Swift">
+<h3>Dress</h3>
+<p>Taylor Swift</p>
+<audio controls><source src="../AUDIO/dress.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/to the bone.jpg" alt="To The Bone by Pamungkas Album Cover" title="To The Bone - Pamungkas">
+<h3>To The Bone</h3>
+<p>Pamungkas</p>
+<audio controls><source src="../AUDIO/tothebone.mp3" type="audio/mpeg"></audio>
+</div>
+
+<div class="song">
+<img src="../IMAGES/MEDIA/BEATS/allieverneed.jpg" alt="All I Ever Need by Austin Mahone Album Cover" title="All I Ever Need - Austin Mahone">
+<h3>All I Ever Need</h3>
+<p>Austin Mahone</p>
+<audio controls><source src="../AUDIO/allieverneed.mp3" type="audio/mpeg"></audio>
+</div>
+
+</div>
+<a href="#top" class="back-top">Back to Top</a>
+</section>
+
+<footer>
+© 2025 Jana Sayrielle. All rights reserved.
+</footer>
+
+</body>
+</html>

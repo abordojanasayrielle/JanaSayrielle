@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Paris | Jana Sayrielle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../../logo.png" type="image/x-icon">
+
+<base target="ParisImage">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4&display=swap" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Serif 4", Georgia, serif;
+}
+
+body {
+    background: #fff0f5;
+    color: #333;
+    line-height: 1.8;
+    padding-top: 100px;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 400;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    background-color: #fff;
+    color: #f06a9b;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo p {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* PAGE TITLE */
+.page-title {
+    background: #fff0f5;
+    padding: 60px 20px 40px 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+.page-title h2 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #555;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.back-dreams {
+    display: inline-block;
+    font-size: 15px;
+    background: #f06a9b;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 25px;
+    border: 2px solid #f06a9b;
+}
+
+/* DREAM SECTION */
+.paris-section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.paris-section .images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.paris-section .images a img {
+    width: 100%;        /* fill container */
+    height: 250px;      /* same height for all */
+    object-fit: cover;  /* crop if necessary */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    display: block;
+}
+.paris-section p {
+    font-size: 17px;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.paris-section ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.back-top {
+    display: inline-block;
+    font-size: 15px;
+    background: #f06a9b;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 25px;
+    border: 2px solid #f06a9b;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    header { padding: 20px; }
+    nav a { margin-left: 15px; font-size: 14px; }
+    .paris-section .images {
+        flex-direction: column;
+    }
+    .paris-section .images a img {
+        width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #777;
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+    <div class="logo">
+        <img src="../../logo.png" alt="Logo">
+        <div>
+            <h1>Jana Sayrielle</h1>
+            <p>CONTENT CREATOR</p>
+        </div>
+    </div>
+    <nav>
+        <a href="../../index.html">ABOUT ME</a>
+        <a href="../../index.html#blogs">BLOGS</a>
+        <a href="../../MEDIA/media.html">MEDIA</a>
+        <a href="../dreams.html">DREAMS</a>
+        <a href="../../gallery.html">GALLERY</a>
+    </nav>
+</header>
+
+<section class="page-title">
+    <h2>Paris</h2>
+    <p>The City of Love</p>
+    <a href="../dreams.html" class="back-dreams" target="_self">Back to Dream Page</a>
+</section>
+
+<section class="paris-section">
+
+    <div class="images">
+        <a href="../../IMAGES/PHOTOGALLERY/DREAMPLACES/PARIS/emilyinparis.jpg" target="ParisImage">
+            <img src="../../IMAGES/PHOTOGALLERY/DREAMPLACES/PARIS/emilyinparis.jpg" alt="Emily in Paris">
+        </a>
+
+        <a href="../../IMAGES/PHOTOGALLERY/DREAMPLACES/PARIS/emilywalking.jpeg" target="ParisImage">
+            <img src="../../IMAGES/PHOTOGALLERY/DREAMPLACES/PARIS/emilywalking.jpeg" alt="Emily walking in Paris">
+        </a>
+    </div>
+
+    <p>I’ve only seen Paris in movies and series, especially <em>Emily in Paris</em>. I want to experience that romantic, soft, aesthetic lifestyle — walking around in cute outfits, drinking coffee in a café, and seeing the city lights at night. I also dream of seeing “Emily’s apartment” vibe in real life and taking photos near iconic Paris streets.</p>
+
+    <h3>What I want to see & experience:</h3>
+    <ul>
+        <li>Eiffel Tower at night</li>
+        <li>Parisian cafés and cobblestone streets</li>
+        <li>Classic Haussmann-style apartments</li>
+    </ul>
+
+    <a href="#top" class="back-top" target="_self">Back to Top</a>
+
+</section>
+
+<footer>
+© 2025 Jana Sayrielle. All rights reserved.
+</footer>
+
+</body>
+</html>

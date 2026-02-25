@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Film Movies | Jana Sayrielle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" href="../logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4&display=swap" rel="stylesheet">
+
+<style>
+
+/* ================= GLOBAL ================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.8;
+  padding-top: 100px;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #f06a9b;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+  width: 100%;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo p {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* ================= HERO ================= */
+
+.movies-hero {
+  background: #fff0f5;
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+.movies-hero h1 {
+  font-size: 40px;
+}
+
+.movies-nav {
+  text-align: center;
+  margin: 20px 0 20px;
+  font-weight: 500;
+}
+
+.movies-nav a {
+  margin: 0 15px;
+  font-size: 16px;
+  color: #551443;
+}
+
+.movies-nav a:hover {
+  color: #f06a9b;
+  border-bottom: 2px solid #f06a9b;
+  padding-bottom: 2px;
+}
+
+.go-back {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* ================= SECTIONS ================= */
+
+.category {
+  padding: 60px 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.category h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.film-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.film {
+  text-align: center;
+}
+
+.film img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.film p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* BACK TO TOP */
+
+.back-top{
+  display:block;          
+  width:fit-content;   
+  margin:25px auto 0;  
+  font-size:14px;
+  background:#f06a9b;
+  color:#fff;
+  padding:8px 20px;
+  border-radius:25px;
+  border:2px solid #f06a9b;
+}
+
+.back-top:hover{
+  background:#fff;
+  color:#f06a9b;
+}
+
+@media (max-width: 1000px) {
+  .film-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #777;
+}
+
+</style>
+</head>
+
+<body id="top">
+
+<header>
+  <div class="logo">
+    <img src="../logo.png" alt="Jana Sayrielle Logo" title="Jana Sayrielle Logo">
+    <div>
+      <h1>Jana Sayrielle</h1>
+      <p>CONTENT CREATOR</p>
+    </div>
+  </div>
+
+   <nav>
+    <a href="../index.html">ABOUT ME</a>
+    <a href="../index.html#blogs">BLOGS</a>
+    <a href="media.html">MEDIA</a>
+    <a href="../DREAM/dreams.html">DREAMS</a>
+    <a href="../gallery.html">GALLERY</a>
+  </nav>
+</header>
+
+<section class="movies-hero">
+  <h1>My Film Movies ♡</h1>
+
+  <div class="movies-nav">
+    <a href="#romance">Romance</a> |
+    <a href="#comedy">Comedy</a> |
+    <a href="#fantasy">Fantasy</a> 
+  </div>
+
+  <a href="media.html" class="go-back">Go Back</a>
+</section>
+
+<!-- ================= ROMANCE ================= -->
+<section class="category" id="romance">
+<h2>Romance</h2>
+<div class="film-grid">
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/toalltheboysibeloved.jpg" alt="To All the Boys I've Loved Before Poster" title="To All the Boys I've Loved Before Poster">
+<h3>To All the Boys I've Loved Before</h3>
+<p><strong>Director:</strong> Susan Johnson</p>
+<p><strong>Stars:</strong> Lana Condor, Noah Centineo</p>
+<p>A teenage girl’s secret love letters get mailed out unexpectedly.</p>
+<iframe src="https://www.youtube.com/embed/fzKzkXj3hek?si=6ZZ5ZipDVhkqsEl-" allowfullscreen></iframe>
+</div>
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/loveuntangled.jpg" alt="Love Untangled Poster" title="Love Untangled Poster">
+<h3>Love Untangled</h3>
+<p><strong>Director:</strong> Kim Jae-hyun</p>
+<p><strong>Stars:</strong> Shin Ye-eun, Gong Myung</p>
+<p>A heartfelt story about young love and emotional growth.</p>
+<iframe src="https://www.youtube.com/embed/1Pa1fJpbFNA?si=4f1Ue5g0US54y_8U" allowfullscreen></iframe>
+</div>
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/shesdatingthegangster.jpg" alt="She's Dating the Gangster Poster" title="She's Dating the Gangster Poster">
+<h3>She's Dating the Gangster</h3>
+<p><strong>Director:</strong> Cathy Garcia-Molina</p>
+<p><strong>Stars:</strong> Kathryn Bernardo, Daniel Padilla</p>
+<p>A nostalgic Filipino love story across two generations.</p>
+<iframe src="https://www.youtube.com/embed/sMqmOo1Q32E?si=AbLlIjVOaxh6Tthy" allowfullscreen></iframe>
+</div>
+
+</div>
+<a href="#top" class="back-top">Back to Top</a>
+</section>
+
+<!-- ================= COMEDY ================= -->
+<section class="category" id="comedy">
+<h2>Comedy</h2>
+<div class="film-grid">
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/pitchperfect.jpg" alt="Pitch Perfect Poster" title="Pitch Perfect Poster">
+<h3>Pitch Perfect</h3>
+<p><strong>Director:</strong> Jason Moore</p>
+<p><strong>Stars:</strong> Anna Kendrick, Rebel Wilson</p>
+<p>A college a cappella group competes in a national singing competition.</p>
+<iframe src="https://www.youtube.com/embed/hGdz2rMbTIM?si=IEKLRgI9w2QXh3NM" allowfullscreen></iframe>
+</div>
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/sevensundays.jpg" alt="Seven Sundays Poster" title="Seven Sundays Poster">
+<h3>Seven Sundays</h3>
+<p><strong>Director:</strong> Cathy Garcia-Molina</p>
+<p><strong>Stars:</strong> Aga Muhlach, Ronaldo Valdez</p>
+<p>A Filipino family reunites after their father’s illness.</p>
+<iframe src="https://www.youtube.com/embed/u3614rccaJ0?si=pOuTnxuFqiFa1z9G" allowfullscreen></iframe>
+</div>
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/catchme.jpg" alt="Catch Me If You Can Poster" title="Catch Me If You Can Poster">
+<h3>Catch Me If You Can</h3>
+<p><strong>Director:</strong> Steven Spielberg</p>
+<p><strong>Stars:</strong> Leonardo DiCaprio, Tom Hanks</p>
+<p>A con artist successfully impersonates professionals while being chased by the FBI.</p>
+<iframe src="https://www.youtube.com/embed/RW5gvDk4m3o?si=Pzn4y9Q05zb5uoKX" allowfullscreen></iframe>
+</div>
+
+</div>
+<a href="#top" class="back-top">Back to Top</a>
+</section>
+
+<!-- ================= FANTASY ================= -->
+<section class="category" id="fantasy">
+<h2>Fantasy</h2>
+<div class="film-grid">
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/peculiarchildren.jpg" alt="Miss Peregrine's Home for Peculiar Children Poster" title="Miss Peregrine's Home for Peculiar Children Poster">
+<h3>Miss Peregrine's Home for Peculiar Children</h3>
+<p><strong>Director:</strong> Tim Burton</p>
+<p><strong>Stars:</strong> Asa Butterfield, Eva Green</p>
+<p>A boy discovers children with extraordinary powers.</p>
+<iframe src="https://www.youtube.com/embed/iBMYu_Hdsco?si=MOg4lE-97oQ8Cis4" allowfullscreen></iframe>
+</div>
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/hpsorcerer.jpg" alt="Harry Potter and the Sorcerer's Stone Poster" title="Harry Potter and the Sorcerer's Stone Poster">
+<h3>Harry Potter and the Sorcerer's Stone</h3>
+<p><strong>Director:</strong> Chris Columbus</p>
+<p><strong>Stars:</strong> Daniel Radcliffe, Emma Watson</p>
+<p>A young boy discovers he is a wizard and begins his magical journey at Hogwarts.</p>
+<iframe src="https://www.youtube.com/embed/z4K2F_OALPQ?si=3HX7Q65qigTpddu4" allowfullscreen></iframe>
+</div>
+
+<div class="film">
+<img src="../IMAGES/MEDIA/MOVIES/hpprisoner.jpg" alt="Harry Potter and the Prisoner of Azkaban Poster" title="Harry Potter and the Prisoner of Azkaban Poster">
+<h3>Harry Potter and the Prisoner of Azkaban</h3>
+<p><strong>Director:</strong> Alfonso Cuarón</p>
+<p><strong>Stars:</strong> Daniel Radcliffe, Emma Watson</p>
+<p>Harry uncovers secrets about a dangerous prisoner who escaped from Azkaban.</p>
+<iframe src="https://www.youtube.com/embed/3ucXmCqe8q8?si=A9b6v6KXblbZURLP" allowfullscreen></iframe>
+</div>
+
+</div>
+<a href="#top" class="back-top">Back to Top</a>
+</section>
+
+<footer>
+© 2026 Jana Sayrielle. All rights reserved.
+</footer>
+
+</body>
+</html>

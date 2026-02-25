@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dreams | Jana Sayrielle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="../logo.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4&display=swap" rel="stylesheet">
+
+<style>
+/* GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Serif 4", Georgia, serif;
+}
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.8;
+  padding-top: 100px;
+}
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  color: #000;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #f06a9b;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+.logo h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.logo p {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+nav a {
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* PAGE TITLE */
+.page-title {
+  background: #fff0f5;
+  padding: 50px 20px 30px 20px;
+  text-align: center;
+}
+.page-title h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.page-title p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* MINI NAVBAR (like beats-nav) */
+.beats-nav {
+  text-align: center;
+  margin: 20px 0 40px;
+  font-weight: 500;
+}
+.beats-nav a {
+  margin: 0 15px;
+  font-size: 16px;
+  color: #551443;
+  transition: 0.3s;
+}
+.beats-nav a:hover {
+  color: #f06a9b;
+  border-bottom: 2px solid #f06a9b;
+  padding-bottom: 2px;
+}
+
+/* DREAM SECTION */
+.dream-section {
+  padding: 60px 50px;
+  text-align: center;
+  overflow-x: auto;
+}
+.dream-section img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* BACK BUTTON */
+.back-top {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 14px;
+  background: #f06a9b;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 25px;
+  border: 2px solid #f06a9b;
+}
+.back-top:hover {
+  background: #fff;
+  color: #f06a9b;
+  border: 2px solid #f06a9b;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  color: #777;
+}
+
+/* RESPONSIVE NAV */
+@media(max-width:768px){
+  header {
+    padding: 20px;
+  }
+  nav a {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  .dream-section {
+    padding: 40px 20px;
+  }
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+  <div class="logo">
+    <img src="../logo.png" alt="Logo">
+    <div>
+      <h1>Jana Sayrielle</h1>
+      <p>CONTENT CREATOR</p>
+    </div>
+  </div>
+  <nav>
+    <a href="../index.html">ABOUT ME</a>
+    <a href="../index.html#blogs">BLOGS</a>
+    <a href="../MEDIA/media.html">MEDIA</a>
+    <a href="dreams.html">DREAMS</a>
+    <a href="../gallery.html">GALLERY</a>
+  </nav>
+</header>
+
+<section class="page-title">
+  <h2>My Dreams ⌯✈︎</h2>
+  <p>Places I hope to visit and goals I hope to achieve someday.</p>
+  <div class="beats-nav">
+  <a href="#dream-places">Dream Places</a> |
+  <a href="#bucket-list">Bucket List</a>
+</div>
+</section>
+
+<!-- MINI NAVBAR FOR DREAMS AND BUCKET LIST -->
+
+
+<!-- DREAM PLACES -->
+<section class="dream-section" id="dream-places">
+  <h2>Dream Places to Visit</h2>
+  <img src="../IMAGES/PHOTOGALLERY/DREAMPLACES/DREAMPLACES.png" 
+       usemap="#image-map" 
+       alt="Dream Places Map">
+
+  <map name="image-map">
+      <!-- SWITZERLAND -->
+      <area alt="Switzerland" title="Switzerland" href="places/switzerland.html" coords="64,39,194,168" shape="rect">
+      <!-- CHINA -->
+      <area  alt="China" title="China" href="places/china.html" coords="250,211,263,195,298,190,322,204,336,223,336,259,303,288,285,305,263,325,250,335,230,314,199,289,170,255,165,233,172,215,186,199,201,192,224,189,240,198,256,210,257,207" shape="poly">
+      <!-- PARIS -->
+      <area alt="Paris" title="Paris" href="places/paris.html" coords="119,383,69" shape="circle">
+      <!-- JAPAN -->
+      <area alt="Japan" title="Japan" href="places/japan.html" coords="452,374,376,449,300,373,377,296" shape="poly">
+      <!-- SOUTH KOREA -->
+      <area alt="South Korea" title="South Korea" href="places/southkorea.html" coords="382,141,427,174,407,118,448,89,398,88,378,39,363,88,306,87,354,120,335,171" shape="poly">
+  </map>
+
+  <a href="#top" class="back-top">Back to Top</a>
+</section>
+
+<section class="dream-section" id="bucket-list">
+  <h2>Bucket List</h2>
+  <img src="../IMAGES/PHOTOGALLERY/BUCKETLIST/visionboard.jpg" 
+       alt="My Dream Bucket List" 
+       title="My Dream Bucket List" 
+       usemap="#bucket-map">
+
+  <map name="bucket-map">
+      <area alt="My Dream Bucket List" 
+            title="My Dream Bucket List" 
+            href="bucketlist.html" 
+            shape="rect" 
+            coords="0,0,1200,675" 
+            target="_self">
+  </map>
+  
+  <a href="#top" class="back-top">Back to Top</a>
+</section>
+<footer>
+© 2025 Jana Sayrielle. All rights reserved.
+</footer>
+
+</body>
+</html>
